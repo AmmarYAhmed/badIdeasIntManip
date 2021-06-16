@@ -22,10 +22,32 @@ namespace badIdeasIntManip
                     numbers[i] = result;
                 }
             }
-
+            
             while (true)
             {
-                throw new NotImplementedException();
+                
+                String input = Console.ReadLine();
+                if (input.StartsWith("2"))
+                {
+                    for(int i = 0; i < numbers.Length; i++)
+                    {
+                        int number = numbers[i];
+                        if (number % 2 == 1)
+                        {
+                            Console.WriteLine(number);
+                        }
+                    }
+                }
+                if (input.StartsWith("3"))
+                {
+                    for (int i = 0; i < numbers.Length; i++)
+                    {
+                        if (i % 5 == 0)
+                        {
+                            Console.WriteLine(numbers[i]);
+                        }
+                    }
+                }
             }
         }
     }
