@@ -23,9 +23,51 @@ namespace badIdeasIntManip
                 }
             }
 
-            while (true)
+            var shouldQuit = false;
+            while (!shouldQuit)
             {
-                throw new NotImplementedException();
+                var input = "7";
+
+                if (input.StartsWith("1"))
+                {
+                    for (var i = 0; i < numbers.Length; i++)
+                    {
+                        var number = numbers[i];
+                        if (i == numbers.Length - 1)
+                        {
+                            Console.Write(number);
+                        }
+                        else
+                        {
+                            Console.Write(number + ", ");
+                        }
+                    }
+                }
+
+                if (input.StartsWith("2"))
+                {
+                    for (var i = 0; i < numbers.Length; i++)
+                    {
+                        if (numbers[i] % 2 == 0)
+                        {
+                            if (i == numbers.Length - 1)
+                            {
+                                Console.Write(numbers[i]);
+                            }
+                            else
+                            {
+                                Console.Write(numbers[i] + ", ");
+                            }
+                        }
+                    }
+                }
+
+                if (input.StartsWith("7"))
+                {
+                    shouldQuit = true;
+                }
+
+                return;
             }
         }
     }
