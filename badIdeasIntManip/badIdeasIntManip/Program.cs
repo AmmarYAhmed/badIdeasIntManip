@@ -28,7 +28,7 @@ namespace badIdeasIntManip
             {
                 var input = "7";
 
-                if (input.StartsWith("1"))
+                if (input.StartsWith("0"))
                 {
                     for (var i = 0; i < numbers.Length; i++)
                     {
@@ -44,7 +44,7 @@ namespace badIdeasIntManip
                     }
                 }
 
-                if (input.StartsWith("2"))
+                if (input.StartsWith("1"))
                 {
                     for (var i = 0; i < numbers.Length; i++)
                     {
@@ -62,7 +62,7 @@ namespace badIdeasIntManip
                     }
                 }
 
-                if (input.StartsWith("7"))
+                if (input.StartsWith("6"))
                 {
                     shouldQuit = true;
                 }
